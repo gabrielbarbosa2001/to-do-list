@@ -117,13 +117,12 @@ li span {
 }
 span.delete {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   color: red;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   text-align: center;
-  float: right;
   max-width: 100px;
 }
 
