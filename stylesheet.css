@@ -1,0 +1,159 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-image: url(./backgroundss.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #532728;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border-radius: 5px;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+li span {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(72, 184, 72);
+}
+
+#addButton {
+  background-color: rgb(90, 192, 86);
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  display: block;
+  margin: 5px auto;
+}
+
+#taskInput {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  margin: 10px auto;
+}
+#taskInput:focus {
+  border-color: #000;
+  outline: none;
+}
+
+#removeButton {
+  background-color: rgb(255, 8, 0);
+  color: wheat;
+  font-size: 16px;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ced0ba;
+  border-radius: 1%;
+  height: 100%;
+  padding-bottom: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 500px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+span.delete {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+  max-width: 100px;
+}
+
+span.delete:hover {
+  background-color: darkred;
+  color: white;
+}
+footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  margin: 15px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Limitando o número de caracteres por tarefa e fazendo com que quebre a linha */
+.tasklist {
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.task {
+  word-wrap: break-word;
+}
+.check {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
